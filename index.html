@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mercado Parati: ofertas, produtos frescos e praticidade para a sua rotina." />
+    <meta name="theme-color" content="#d42d27" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Mercado Parati" />
+    <meta property="og:description" content="Preço justo, variedade e praticidade perto de você." />
+    <meta property="og:locale" content="pt_BR" />
+    <title>Mercado Parati | Ofertas perto de você</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- Carregamento inicial, removido pelo módulo principal. -->
+    <div class="loader" aria-hidden="true"><span class="loader__mark" data-brand-mark>MP</span></div>
+
+    <header class="site-header" id="topo">
+      <div class="container header__content">
+        <a class="brand" href="#inicio" aria-label="Voltar ao início">
+          <span class="brand__mark" data-brand-mark>MP</span><span class="brand__name" data-business-name></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="main-navigation" id="main-navigation" aria-label="Navegação principal">
+          <ul class="navigation-list" data-navigation></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero: proposta de valor e ações principais. -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__image" data-hero-image></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="eyebrow" data-hero-eyebrow></p>
+          <h1 id="hero-title" data-hero-title></h1>
+          <p class="hero__subtitle" data-hero-subtitle></p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#ofertas" data-hero-primary></a>
+            <a class="button button--ghost" data-whatsapp-link target="_blank" rel="noopener" data-hero-secondary></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ofertas: carrossel renderizado a partir de js/config.js e controlado por js/promotions.js. -->
+      <section class="section section--surface offers" id="ofertas" aria-labelledby="offers-title">
+        <div class="container">
+          <div class="section__heading"><p class="eyebrow">Economia de verdade</p><h2 id="offers-title">Ofertas que fazem bem ao seu bolso.</h2></div>
+          <div class="product-carousel" data-promotion-carousel aria-label="Ofertas da semana"></div>
+        </div>
+      </section>
+
+      <!-- Destaques: categorias estratégicas do mercado, renderizadas dinamicamente. -->
+      <section class="section highlights" id="destaques" aria-labelledby="highlights-title">
+        <div class="container">
+          <div class="section__heading"><p class="eyebrow">Para facilitar sua rotina</p><h2 id="highlights-title">Escolhas frescas para cada momento.</h2></div>
+          <div class="product-carousel" data-highlight-carousel aria-label="Destaques do Mercado Parati"></div>
+        </div>
+      </section>
+
+      <!-- Sobre: apresenta o posicionamento do negócio. -->
+      <section class="section about section--surface" id="sobre" aria-labelledby="about-title">
+        <div class="container split-layout">
+          <div class="about__image" data-about-image role="img"></div>
+          <div class="section__content">
+            <p class="eyebrow">O Parati é seu</p>
+            <h2 id="about-title" data-about-title></h2>
+            <p data-about-text></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Diferenciais: razões para escolher o negócio. -->
+      <section class="section" id="diferenciais" aria-labelledby="differentials-title">
+        <div class="container section__heading section__heading--center"><p class="eyebrow">Nosso padrão</p><h2 id="differentials-title">Cuidado em cada etapa.</h2><ul class="differentials-list" data-differentials></ul></div>
+      </section>
+
+      <!-- Avaliações: slider simples controlado por js/slider.js. -->
+      <section class="section" id="avaliacoes" aria-labelledby="reviews-title">
+        <div class="container review-section"><div class="section__heading"><p class="eyebrow">Quem conhece, recomenda</p><h2 id="reviews-title">A confiança de nossos clientes.</h2></div><div class="review-slider" data-review-slider></div></div>
+      </section>
+
+      <!-- CTA: convite direto para consultar ofertas. -->
+      <section class="section section--cta" aria-labelledby="cta-title">
+        <div class="container cta"><p class="eyebrow">Compra inteligente começa aqui</p><h2 id="cta-title">Quer saber o que está em oferta hoje?</h2><a class="button button--primary" data-whatsapp-link target="_blank" rel="noopener">Falar com o Mercado</a></div>
+      </section>
+
+      <!-- Horários e localização. -->
+      <section class="section section--surface" id="contato" aria-labelledby="contact-title">
+        <div class="container contact-grid"><div><p class="eyebrow">Visite-nos</p><h2 id="contact-title">Estamos esperando por você.</h2><address data-address></address><a class="text-link" data-maps-link target="_blank" rel="noopener">Como chegar</a></div><div><h3>Horários</h3><dl class="hours-list" data-hours></dl></div></div>
+      </section>
+    </main>
+
+    <!-- Rodapé: contatos e links institucionais. -->
+    <footer class="site-footer"><div class="container footer__content"><p>© <span data-current-year></span> <span data-business-name></span>. Todos os direitos reservados.</p><a data-instagram-link target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></div></footer>
+
+    <a class="whatsapp-float" data-whatsapp-link target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">WhatsApp</a>
+    <script src="js/config.js"></script>
+    <script src="js/promotions.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

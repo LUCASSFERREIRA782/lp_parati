@@ -1,0 +1,16 @@
+/* Aprimoramentos progressivos para telas maiores. */
+@media (min-width: 42rem) {
+  .section { padding-block: var(--space-4xl); }
+  .product-card { width: 18rem; }
+  .highlight-card { width: 16rem; }
+  .contact-grid { grid-template-columns: 1.1fr 0.9fr; }
+}
+
+@media (min-width: 56rem) {
+  .menu-toggle { display: none; }
+  .main-navigation { display: block; }
+  .navigation-list { display: flex; align-items: center; gap: var(--space-lg); padding: 0; }
+  .split-layout { grid-template-columns: 1fr 1fr; align-items: center; gap: var(--space-3xl); }
+  .about__image { min-height: 32rem; }
+  .hero__content { padding-bottom: var(--space-4xl); }
+}

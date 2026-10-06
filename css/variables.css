@@ -1,0 +1,37 @@
+/*
+ * Tokens visuais do LP Studio.
+ * Edite este arquivo para adaptar a identidade de cada cliente.
+ */
+:root {
+  --color-background: #fffaf2;
+  --color-surface: #fff1d8;
+  --color-surface-light: #ffffff;
+  --color-text: #19251f;
+  --color-text-muted: #546057;
+  --color-accent: #d42d27;
+  --color-accent-hover: #ab1e1a;
+  --color-secondary: #1d743d;
+  --color-border: rgba(25, 37, 31, 0.12);
+  --color-overlay: rgba(12, 25, 17, 0.62);
+
+  --font-display: 'Montserrat', Arial, sans-serif;
+  --font-body: 'Montserrat', Arial, sans-serif;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+  --space-4xl: 7rem;
+
+  --container-width: 72rem;
+  --header-height: 4.75rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-pill: 999px;
+  --shadow-card: 0 1.25rem 3.5rem rgba(0, 0, 0, 0.25);
+  --transition-base: 180ms ease;
+}
